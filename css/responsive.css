@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 800px) {
+  #inicio{
+    background-size: 65%, cover;
+  }
+  #sobre_mi {
+    display: none;
+  }
+}

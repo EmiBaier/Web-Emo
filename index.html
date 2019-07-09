@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="cabezal">
+      <p class="logo"><a href="">EMLNBR_</a></p>
+      <ul class="menu">
+        <li><a id="hamburguer"><i class="fas fa-bars"></i></a></li>
+        <li><a href="#inicio">INC_</a></li>
+        <li><a href="#sobre_mi">SBRM_</a></li>
+        <li><a href="#portfolio">PRTFL_</a></li>
+        <li><a href="#contacto">CNTCT_</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footerInicio">
+      <div class="redes">
+        <div class="behance"></div>
+        <div class="instagram"></div>
+        <div class="pinterest"></div>
+      </div>
+      <a href=""><div class="flechaInicio"></div></a>
+      <a href=""><p class="idioma">NGLSH_</p></a>
+    </nav>
+
+    <section id="inicio"></section>
+
+    <section id="yo">
+      <div id="sobre_mi">
+        <p class="titulo">SOY ILUSTRADOR Y DG_</p>
+        <p class="contenido">
+          Desde abril del 2016 me encuentro trabajando en el área
+          de diseño de la Subsecretaría de Comunicación Pública de
+          la Municipalidad de San Martín.
+        </br></br>
+          A lo largo de mi carrera pude incorporar conocimientos
+          en distintos campos como son el diseño editorial,
+          desarrollo web y fotografía, entro otros.
+      </div>
+    </section>
+
+    <section id="portfolio">
+
+      <div class="carrousel">
+        <a href="" class="item"><p>BLUE<br>BEAR_</p><h6>Ilustración</h6>
+        </a><a href="" class="item"><p>ENCICLO-<br>PEDIA_</p><h6>Ilustración</h6>
+        </a><a href="" class="item"><p>CUENTA-<br>BUELOS_</p><h6>Ilustración</h6>
+        </a><a href="" class="item"><p>SILENCIOS<br>ESCRITOS_</p><h6>Ilustración</h6>
+        </a><a href="" class="item"><p>LITERATURA<br>FANTÁSTICA_</p><h6>Ilustración</h6>
+        </a><a href="" class="item"><p>BLACK<br>ROSE_</p><h6>Ilustración</h6>
+        </a><a href="" class="item"><p>JAZZ<br>CAT_</p><h6>Ilustración</h6>
+        </a>
+      </div>
+
+      <div class="flechas">
+        <div class="flechaIzq"></div>
+        <div class="flechaDer"></div>
+      </div>
+
+    </section>
+
+    <section id="contacto">
+      <div class="formContainer">
+
+        <div class="formContainer-">
+          <form action="script.php" method="post">
+            <label for="comments">NOMBRE_APELLIDO_</label>
+            <input id="nombre" type="text" name="nombre" class="input_text" required>
+            <label for="comments">E-MAIL_</label>
+            <input id="e-mail" type="email" name="email" required>
+            <label for="comments">EMPRESA/<br>ORGANIZACIÓN_</label>
+            <input id="empresa" type="text" name="empresa" required>
+          </form>
+        </div>
+
+        <div class="formContainer-">
+          <label for="comments">MENSAJE_</label>
+          <textarea id="mensaje" name="mensaje"></textarea>
+          <input id="enviar" type="submit" value="NVR_">
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <h4>EMLNBR_</h4>
+        <ul class="footerSecciones">
+          <li>PRTFL_</li>
+          <li>TND_</li>
+          <li>BLG_</li>
+          <li>CNTCT_</li>
+        </ul>
+      </div>
+      <div class="footerItems">
+        <div>
+          <h5>E-MAIL_</h5>
+          <ul>
+            <li class="liNews">info@emilianobaier.com</li>
+            <li class="liNews">baieremiliano@gmail.com</li>
+          </ul>
+        </div>
+        <div class="footerRedes">
+          <ul>
+            <li class=""><img src="src/Be.png" alt="">/EBAIER</li>
+            <li class=""><img src="src/insta.png" alt="">/EMILIANOBAIER</li>
+            <li class=""><img src="src/p.png" alt="">/EMIBAIER</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      const menuBtn = document.getElementById("hamburguer");
+
+      menuBtn.addEventListener("click", () => {
+        if(document.querySelector(".menu.show")){
+          document.querySelector(".menu").classList.remove("show");
+        } else {
+          document.querySelector(".menu").classList.add("show");
+        }
+      })
+    </script>
+  </body>
+</html>
